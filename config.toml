@@ -1,4 +1,5 @@
 baseURL = "https://sammyageil.com"
 languageCode = "en-us"
 title = "Sammy Ageil"
-theme="dimension"
+theme="base16"
+pygmentsuseclasses = true
