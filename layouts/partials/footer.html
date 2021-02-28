@@ -4,6 +4,11 @@
   <div class="container">
     <span class="copyright">&copy; {{ .Site.Title }} - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
   </div>
+  <!-- On localhost, insert W3C validation link -->
+{{ if in (.Site.BaseURL | string) "localhost" }}
+    <a href="https://validator.w3.org/nu/?doc={{ "https://sammyageil.com" }}{{ .RelPermalink }}"
+    target="_blank">Validate @ W3C</a>
+{{ end }}
 </footer>
 
 </body>
