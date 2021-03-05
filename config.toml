@@ -1,4 +1,4 @@
-baseURL = "https://sammyageil.com"
+baseURL = "https://sammyageil.com/"
 languageCode = "en-us"
 title = "Sammy Ageil"
 theme="base16"
