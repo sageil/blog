@@ -10,6 +10,8 @@
     target="_blank">Validate @ W3C</a>
 {{ end }}
 </footer>
-
+{{range .Site.Params.customJS -}}
+<script src="{{. | absURL}}"></script>
+{{- end}}
 </body>
 </html>
