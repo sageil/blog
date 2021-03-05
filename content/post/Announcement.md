@@ -49,3 +49,28 @@ func main(){
 	}
 
 ```
+
+``` java
+public final class StringHelper {
+
+    public static String toTitleCase(String text) {
+
+        StringBuilder titleCase = new StringBuilder(text.length());
+        boolean nextTitleCase = true;
+
+        for (char c : text.toLowerCase().toCharArray()) {
+            if (!Character.isLetterOrDigit(c)) {
+                nextTitleCase = true;
+            } else if (nextTitleCase) {
+                c = Character.toTitleCase(c);
+                nextTitleCase = false;
+            }
+            titleCase.append(c);
+        }
+
+        return titleCase.toString();
+    }
+
+}
+```
+
