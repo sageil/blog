@@ -7,7 +7,6 @@ categories: ["Framework"]
 ---
 This post is just a test to verify the functional components of the new blog framework before migrating the old posts <!--more-->
 ``` JavaScript
-
 function toProper(str) {
   return str.replace(
     /(\w*\W*|\w*)\s*/g,
@@ -19,24 +18,20 @@ function toProper(str) {
 const properName = toProper("jane doe");
 ```
  ``` csharp
-
  string ToProperName(this string input)
  {
     CultureInfo culture = Thread.CurrentThread.CurrentCulture;
     TextInfo textInfo = culture.TextInfo;
-    return textInfo.ToTitleCase(txt);     
+    return textInfo.ToTitleCase(txt)
  }
-var message = "hello C#";
-var properString = message.ToProper());
+    var message = "hello C#";
+    var properString = message.ToProper())
  ```
-
  ``` python
 def toProper(s):
 	return s.title()
 
 print(toProper("hello python"))
-
-```
 
 ``` go
 package main
@@ -46,8 +41,7 @@ import (
 		)
 func main(){
 	fmt.Println(strings.Title("hello Go"))
-	}
-
+}
 ```
 
 ``` java
