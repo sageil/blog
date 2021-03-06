@@ -32,8 +32,8 @@ def toProper(s):
 	return s.title()
 
 print(toProper("hello python"))
-
-``` go
+```
+``` golang
 package main
 import (
 		"fmt"
@@ -42,6 +42,7 @@ import (
 func main(){
 	fmt.Println(strings.Title("hello Go"))
 }
+
 ```
 
 ``` java
